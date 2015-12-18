@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+
+<h1>DIARIA</h1>
+<p:dataTable var="venta" value="#{dtVistaTabla.ventasDiarias}" >
+    <p:column headerText="Id">
+        <h:outputText value="#{venta.idVentas}"/>
+    </p:column>
+    <p:column headerText="Venta">
+        <h:outputText value="#{venta.total}"/>
+    </p:column>
+    <p:column headerText="Importe">
+        <h:outputText value="#{venta.importe}"/>
+    </p:column>
+    <p:column headerText="Cambio">
+        <h:outputText value="#{venta.cambio}"/>
+    </p:column>
+</p:dataTable>
+
+<h1>SEMANAL</h1>
+<p:dataTable var="venta" value="#{dtVistaTabla.ventasDiarias}" >
+    <p:column headerText="Id">
+        <h:outputText value="#{venta.idVentas}"/>
+    </p:column>
+    <p:column headerText="Venta">
+        <h:outputText value="#{venta.total}"/>
+    </p:column>
+    <p:column headerText="Importe">
+        <h:outputText value="#{venta.importe}"/>
+    </p:column>
+    <p:column headerText="Cambio">
+        <h:outputText value="#{venta.cambio}"/>
+    </p:column>
+</p:dataTable>
+
+<h1>MENSUAL</h1>
+<p:dataTable var="venta" value="#{dtVistaTabla.ventasDiarias}" >
+    <p:column headerText="Id">
+        <h:outputText value="#{venta.idVentas}"/>
+    </p:column>
+    <p:column headerText="Venta">
+        <h:outputText value="#{venta.total}"/>
+    </p:column>
+    <p:column headerText="Importe">
+        <h:outputText value="#{venta.importe}"/>
+    </p:column>
+    <p:column headerText="Cambio">
+        <h:outputText value="#{venta.cambio}"/>
+    </p:column>
+</p:dataTable>
+
+
+
+</html>
